@@ -25,13 +25,13 @@ The course will cover following topics.
 - Kotlin multiplatform setup Xcode + Android studio
 - Kotlin multiplatform client creation
 
-## as
+## IDE Setup
 The course is using IntelliJ IDEA Community edition. 
 - [download link](https://www.jetbrains.com/idea/download/)
 - once downloaded please install with default setup
 
 ## Tasks
-### First project
+### Project creation
 1. open IntelliJ idea 
 1. select create new project
 1. choose Kotlin/JVM
@@ -58,19 +58,20 @@ var speed2 = 190
 println(speed1)
 println(speed2)
 ```
-1. create variables with following types: Short, Int, Long, Float, Double
+1. create variables with following types: `Short`, `Int`, `Long`, `Float`, `Double`
+1. print result of addition of `Double` and `Int` number
 ### Booleans
 1. create variable with False value
 1. print the result of: `val result = true && ( false || true )`
 ### Arrays
-1. create array of Double with size of 10
-1. create array of Int with size of 5 and initial value 42
+1. create array of `Double` with size of 10
+1. create array of `Int` with size of 5 and initial value 42
 ### Chars
 1. create variable that hold char
 1. try to concat chars
 ### Functions
-1. create functions for Double numbers addition, reduction, multiplication, division 
-1. create a function with Int & String input parameters. The function prints to console concatenation of the inputs. 
+1. create functions that returns `Double` for 2 `Double` numbers  addition, reduction, multiplication, division 
+1. create a function with `Int` & `String` input parameters. The function prints to console concatenation of the inputs. 
 
 
 ## Additional sources
