@@ -49,6 +49,6 @@ fun main(){
 2. Print an an array of  seasons ("Spring", "Summer", "Autumn", "Winter")
 3. Print a range of numbers from 1 to 100 but when the number is divisible by both 3 and 5 stop the loop
 4. Go through a range of numbers from 1 to 100 and print only the odd ones
-
+5. Go through each character in given string and if it is lowerCase then change it to upperCase and vice versa.
 ## Additional sources
 Interactive playground [link](https://play.kotlinlang.org/koans/Introduction/Hello,%20world!/Task.kt)
