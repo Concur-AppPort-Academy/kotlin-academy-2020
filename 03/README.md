@@ -100,24 +100,33 @@ Classes, objects, interfaces, constructors, functions, properties and their sett
     - `name`, `maxFuel` and `maxSpeed` are constructor parameters
 
 ### Interfaces
-An interface generally defines the set of methods/functions along with their arguments and applicable return types that an instance of a class that has that interface could respond to. How those set of operations are implemented, is left to that particular class. 
-
+An interface generally defines the set of methods/functions along with their arguments and applicable return types that an instance of a class that has that interface could respond to. How those set of operations are implemented, is left to that particular class.
 
 #### Task
 
-1. Create an interface called `CarInterface` for our `Car` class
+1. Rename the class `Car` to `SportsCar`
+2. Create an interface called `Car` for our `SportsCar` class
 
 ### Abstract classes
 Abstract classes are classes that contain one or more abstract methods. An abstract method is a method that is declared, but contains no implementation. Abstract classes may not be instantiated (you cannot create objects of an abstract class), and require subclasses to provide implementations for the abstract methods.
 
 #### Task
-1. Create an abstract class called `CarAbstract` for our `Car` class
+
+1. Create an abstract class called `CarAbstract` for our `SportsCar` class
 
 ### What's the difference?
 - Interfaces can have functions with default bodies. Those functions **cannot be final and they can always be overriden**
 - Interfaces **cannot have state** (theorically)
 - Abstract classes can have everything interfaces have, but also **they can have fields and constructors** (allowing to hold state properly)
 - **Functions and properties with default bodies** in abstract classes **can be final** and they are final by default
+
+#### Analogy in our example
+ 
+> Car (Interface) => expectations from _**any**_ car
+> 
+> CarAbstract (Abstract class) => Volkswagen Group MEB platform
+> 
+> SportsCar (class) => Skoda Karoq
 
 ### Extra (in case we have time, or to do at home)
 First contact with coroutines, although we will learn them in detail in **lesson 7**:
