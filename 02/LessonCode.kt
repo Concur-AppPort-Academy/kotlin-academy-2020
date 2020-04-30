@@ -98,7 +98,6 @@ fun printWhatIAmSimplified(age: Int) {
     println(textToPrint)
 }
 
-//when print day of week
 fun printDayOfWeek(day: Int) {
     when (day) {
         1 -> println("Monday")
