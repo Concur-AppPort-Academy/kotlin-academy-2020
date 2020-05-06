@@ -26,11 +26,12 @@
 1. name the project "lesson-04"
 1. create new Kotlin file in the `src` folder with name `Main`
 1. add your first Kotlin code
-```kotlin
-fun main(){
-    println("Hello World")
-}
-```
+
+    ```kotlin
+    fun main(){
+        println("Hello World")
+    }
+    ```
 1. right click -> run `MainKt`
 
 #### Task 1
