@@ -23,7 +23,7 @@
 1. open IntelliJ idea
 1. select create new project
 1. choose Kotlin/JVM
-1. name the project "lesson-02"
+1. name the project "lesson-04"
 1. create new Kotlin file in the `src` folder with name `Main`
 1. add your first Kotlin code
 ```kotlin
