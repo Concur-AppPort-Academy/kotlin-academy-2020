@@ -16,7 +16,7 @@
 ## Useful links
 - [Slack channel](https://appport-academy.slack.com/) (invite can be requested via [event link](https://appport.cz/event/appport-academy/) or [Meetup group](https://www.meetup.com/Prague-Mobile-Development-Meetup/events/269765161/))
 - [Github](https://github.com/Concur-Kotlin-Academy/academy2020)
-- Kotlin manual: [link](https://kotlinlang.org/docs/reference/classes.html)
+- Kotlin manual: [link](https://kotlinlang.org/docs/reference/collections-overview.html)
 
 ## Tasks
 ### Project creation
