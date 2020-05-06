@@ -73,5 +73,4 @@ fun main(){
 1. remove these items which are odd and print the number which is divisible by 4
 
 ## Additional sources
-- Interactive playground [link](https://play.kotlinlang.org/koans/Introduction/Hello,%20world!/Task.kt)
-- Kotlin classes and objects [link](https://www.programiz.com/kotlin-programming/class-objects)
+- Interactive playground for collections [link](https://play.kotlinlang.org/koans/Collections/Introduction/Task.kt)
