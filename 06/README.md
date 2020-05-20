@@ -13,6 +13,7 @@
 - [Slack channel](https://appport-academy.slack.com/) (invite can be requested via [event link](https://appport.cz/event/appport-academy/) or [Meetup group](https://www.meetup.com/Prague-Mobile-Development-Meetup/events/269765161/))
 - [Github](https://github.com/Concur-Kotlin-Academy/academy2020)
 - Kotlin manual: [link](https://kotlinlang.org/docs/reference/coroutines/coroutines-guide.html)
+- Kotlin coroutines: [link](https://github.com/Kotlin/kotlinx.coroutines)
 
 ## A little bit of theory
 ### Different ways of executing your code
@@ -72,7 +73,7 @@ Structured concurrency is related to three main things:
 4. Name the project `lesson-06`
 5. Add the following line to the dependencies section of the `build.gradle` file:
 
-        implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.3.4"
+        implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.3.7"
 6. Create a new Kotlin file in the `src` folder with name `Main`
 7. Add the following Kotlin code
 
@@ -102,6 +103,7 @@ Structured concurrency is related to three main things:
 ### Playing with suspended functions
 - Add the modifier `suspend` to each task function
 - Add `delay` to our task functions
+- Using `yield`
 
 ### Playing with async
 - Change the return type of `task1()` to String and return the finishing message when the function finishes
