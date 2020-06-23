@@ -6,14 +6,14 @@ Interested to learn a new programming language? Join us for the AppPort Academy 
 https://www.youtube.com/playlist?list=PLRyGmMFK5vHMtKM-noYles5VtiaYYKfTF
 
 ## Content of the lessons :
-– Intellij setup & Basic Syntax + Basic Types
-– Control flow
-– Interface, Abstract Class
-– Conventions & Collections
-– Properties & Builders
-– Basic IO operations
-– Coroutines
-– Kotlin HTTP server creation with Ktor
-– Client Kotlin Ktor
-– Kotlin multiplatform setup Xcode + Android studio
-– Kotlin multiplatform client creation#
+- Intellij setup & Basic Syntax + Basic Types
+- Control flow
+- Interface, Abstract Class
+- Conventions & Collections
+- Properties & Builders
+- Basic IO operations
+- Coroutines
+- Kotlin HTTP server creation with Ktor
+- Client Kotlin Ktor
+- Kotlin multiplatform setup Xcode + Android studio
+- Kotlin multiplatform client creation#
