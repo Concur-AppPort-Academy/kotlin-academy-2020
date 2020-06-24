@@ -2,6 +2,7 @@ package sample
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.widget.TextView
 
 actual class Sample {
@@ -19,5 +20,13 @@ class MainActivity : AppCompatActivity() {
         Sample().checkMe()
         setContentView(R.layout.activity_main)
         findViewById<TextView>(R.id.main_text).text = hello()
+
+        NetworkClient().getHelloWorld {
+            Log.d("MainActivity", "Result: $it")
+        }
+
+        NetworkClient().getExpenses {
+            Log.d("MainActivity", "Result: $it")
+        }
     }
 }

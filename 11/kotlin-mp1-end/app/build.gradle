@@ -1,6 +1,11 @@
-apply plugin: 'com.android.application'
-apply plugin: 'kotlin-android-extensions'
+//plugins{
+//    id 'org.jetbrains.kotlin.multiplatform'
+//}
+
 apply plugin: 'kotlin-multiplatform'
+apply plugin: 'com.android.application'
+apply plugin: 'org.jetbrains.kotlin.plugin.serialization'
+apply plugin: 'kotlin-android-extensions'
 
 android {
     compileSdkVersion 28
@@ -16,6 +21,23 @@ android {
         release {
             minifyEnabled false
         }
+    }
+
+    compileOptions {
+        sourceCompatibility 1.8
+        targetCompatibility 1.8
+    }
+
+    packagingOptions {
+        exclude 'META-INF/ktor-client-serialization.kotlin_module'
+        exclude 'META-INF/ktor-http.kotlin_module'
+        exclude 'META-INF/ktor-utils.kotlin_module'
+        exclude 'META-INF/kotlinx-serialization-runtime.kotlin_module'
+        exclude 'META-INF/ktor-io.kotlin_module'
+        exclude 'META-INF/ktor-http-cio.kotlin_module'
+        exclude 'META-INF/ktor-client-json.kotlin_module'
+        exclude 'META-INF/ktor-client-logging.kotlin_module'
+        exclude 'META-INF/ktor-client-core.kotlin_module'
     }
 }
 
@@ -41,6 +63,18 @@ kotlin {
         commonMain {
             dependencies {
                 implementation kotlin('stdlib-common')
+
+                //Coroutines
+                api("org.jetbrains.kotlinx:kotlinx-coroutines-core-common:$coroutine_version")
+
+                //serialization
+                api("org.jetbrains.kotlinx:kotlinx-serialization-runtime-common:$serialization_version")
+
+                //ktor
+                api("io.ktor:ktor-client-core:$ktor_version")
+                api("io.ktor:ktor-client-json:$ktor_version")
+                api("io.ktor:ktor-client-logging:$ktor_version")
+                api("io.ktor:ktor-client-serialization:$ktor_version")
             }
         }
         commonTest {
@@ -52,6 +86,17 @@ kotlin {
         androidMain {
             dependencies {
                 implementation kotlin('stdlib')
+
+                //Coroutines
+                api "org.jetbrains.kotlinx:kotlinx-coroutines-android:$coroutine_version"
+
+                //serialization
+                api "org.jetbrains.kotlinx:kotlinx-serialization-runtime:$serialization_version"
+
+                api "io.ktor:ktor-client-json-jvm:$ktor_version"
+                api "io.ktor:ktor-client-okhttp:$ktor_version"
+                api "io.ktor:ktor-client-logging-jvm:$ktor_version"
+                api "io.ktor:ktor-client-serialization-jvm:$ktor_version"
             }
         }
         androidTest {
@@ -61,6 +106,20 @@ kotlin {
             }
         }
         iosMain {
+            dependencies {
+                //Coroutines
+                api "org.jetbrains.kotlinx:kotlinx-coroutines-core-native:$coroutine_version"
+
+                //serialization
+                api "org.jetbrains.kotlinx:kotlinx-serialization-runtime-native:$serialization_version"
+
+                //ktor
+                api "io.ktor:ktor-client-ios:$ktor_version"
+                api "io.ktor:ktor-client-json-native:$ktor_version"
+                api "io.ktor:ktor-client-serialization-native:$ktor_version"
+                api "io.ktor:ktor-client-logging-native:$ktor_version"
+            }
+
         }
         iosTest {
         }

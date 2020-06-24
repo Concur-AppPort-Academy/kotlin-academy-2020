@@ -6,8 +6,8 @@
         <dependsOnModuleNames>:app:commonTest</dependsOnModuleNames>
         <sourceSets>
           <sourceSet>app.iosMain~1</sourceSet>
-          <sourceSet>app.commonMain~1</sourceSet>
           <sourceSet>app.commonTest~1</sourceSet>
+          <sourceSet>app.commonMain~1</sourceSet>
         </sourceSets>
         <newMppModelJpsModuleKind>COMPILATION_AND_SOURCE_SET_HOLDER</newMppModelJpsModuleKind>
         <externalSystemTestTasks>iosTest|:app:iosTest|ios</externalSystemTestTasks>
@@ -23,7 +23,9 @@
             </array>
           </option>
           <option name="pluginClasspaths">
-            <array />
+            <array>
+              <option value="$KOTLIN_BUNDLED$/lib/kotlinx-serialization-compiler-plugin.jar" />
+            </array>
           </option>
           <option name="multiPlatform" value="true" />
           <option name="errors">
