@@ -14,6 +14,5 @@ https://www.youtube.com/playlist?list=PLRyGmMFK5vHMtKM-noYles5VtiaYYKfTF
 - Basic IO operations
 - Coroutines
 - Kotlin HTTP server creation with Ktor
-- Client Kotlin Ktor
 - Kotlin multiplatform setup Xcode + Android studio
-- Kotlin multiplatform client creation#
+- Kotlin multiplatform client creation
