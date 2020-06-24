@@ -7,13 +7,34 @@ class ViewController: UIViewController {
         label.text = Proxy().proxyHello()
         
         
-        NetworkClient().getHelloWorld { result in
+        
+        
+        let teacher = Teacher(name: "John", surname: "Smith")
+        print("\(teacher)")
+        
+        let person = Person()
+        person.name = "Mark"
+        person.surname = "Doe"
+        
+        print("Name: \(person.name) and surname: \(person.surname)")
+        print("\(person)")
+        
+        let client = NetworkClient()
+        client.getHelloWorld { result in
             print("Result: \(result)")
         }
 
-        NetworkClient().getExpenses { result in
+        client.getExpenses { result in
             print("Result: \(result)")
-        }        
+        }
+        
+        
+        
+        
+        
+        
+        
+        
     }
 
     override func didReceiveMemoryWarning() {
