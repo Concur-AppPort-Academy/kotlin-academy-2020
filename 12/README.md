@@ -52,6 +52,31 @@ kotlin {
 ``` 
 3. Sync project and check that you have available new `podspec` task and run it
 4. Setup your project to use cocoapods
+5. Create Podfile in the root of iOS app with following setup
+```kotlin
+source 'https://github.com/CocoaPods/Specs.git'
+
+platform :ios, '13.0'
+use_frameworks!
+inhibit_all_warnings!
+
+def required_pods
+  pod 'app', :path => '../app'  
+
+end
+
+target "iosApp" do
+    required_pods
+end
+#target "iosApp" do
+#    required_pods
+#end
+#target "iosApp" do
+#    required_pods
+#end
+```
+1. Once the Podfile is created just run `pod install` in the folder with iOS app.
+2. Close opened XCode project and reopen via newly create `iosApp.xcworkspace`
 
 ### Concurrency
 1. Create a `expect` class MyExecutor with method `runInNewThread` and implement it for Android and iOS and run following code with it
